@@ -1,0 +1,41 @@
+{
+    "name": "codeconjure/gls",
+    "description": "MyGLS API protokoll-kliens — keretrendszer-független, PSR-18 alapon.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["gls", "mygls", "shipping", "parcel", "psr-18"],
+    "require": {
+        "php": "^8.4",
+        "ext-json": "*",
+        "ext-zlib": "*",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "psr/http-message": "^2.0"
+    },
+    "require-dev": {
+        "nyholm/psr7": "^1.8",
+        "php-http/mock-client": "^1.6",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^12.0 || ^13.0",
+        "sylius-labs/coding-standard": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeConjure\\Gls\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CodeConjure\\Gls\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "php-http/discovery": false
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
